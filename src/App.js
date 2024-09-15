@@ -1,19 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./Components/Navbar";
-import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ProtectedRoute from "./Routes/Protected";
+import LoginPage from "./Components/LoginPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <NavBar />,
-    // eslint-disable-next-line no-sparse-arrays
+    // Protect the NavBar and its children
+    element: <ProtectedRoute element={<NavBar />} />,
     children: [
       {
         index: true,
         element: <div>This is home</div>,
       },
-      ,
       {
         path: "/profile",
         element: <div>This is my profile</div>,
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
         element: <div>This is my about</div>,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <LoginPage />, // Public login page
   },
 ]);
 
