@@ -75,3 +75,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ----Modules Done --------
 
 1- useContext()
+2- outlet with react-router-dom
