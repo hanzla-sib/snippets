@@ -8,8 +8,20 @@ const NavBar = () => {
   const { isLoggedIn, logout, login } = useContext(AuthContext);
 
   return (
-    <>
-      <nav style={{ display: "flex", justifyContent: "space-between" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+
+        minHeight: "100vh",
+      }}
+    >
+      <nav
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         {isLoggedIn ? (
           <button onClick={logout}>Logout</button>
         ) : (
@@ -36,7 +48,7 @@ const NavBar = () => {
       </nav>
       <div
         style={{
-          height: "97vh",
+          flex: 1,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -44,7 +56,7 @@ const NavBar = () => {
       >
         <Outlet />
       </div>
-    </>
+    </div>
   );
 };
 

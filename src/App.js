@@ -1,8 +1,10 @@
+
 import "./App.css";
 import NavBar from "./Components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProtectedRoute from "./Routes/Protected";
 import LoginPage from "./Components/LoginPage";
+
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,9 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <LoginPage />, // Public login page
+    element: (
+     <LoginPage />
+    ), // Public login page
   },
 ]);
 

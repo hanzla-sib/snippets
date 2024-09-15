@@ -11,16 +11,26 @@ const LoginPage = () => {
     }
   }, [isLoggedIn]);
   return (
-    <div>
-      {isLoggedIn ? (
-        <button onClick={logout}>Logout</button>
-      ) : (
-        <button onClick={login}>Login</button>
-      )}
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <div>
+        {" "}
+        {isLoggedIn ? (
+          <button onClick={logout}>Logout</button>
+        ) : (
+          <button onClick={login}>Login</button>
+        )}
+      </div>
+
       <div
         style={{
           display: "flex",
-          height: "97vh",
+          flex: 1,
           justifyContent: "center",
           alignItems: "center",
         }}
