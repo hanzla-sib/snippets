@@ -78,3 +78,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 2- outlet with react-router-dom
 3- protected routes with login 
 4-dynamic height with min-height and flex
+5-clamp(min,cur,upper) for dynamic text font size

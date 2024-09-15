@@ -1,10 +1,8 @@
-
 import "./App.css";
 import NavBar from "./Components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProtectedRoute from "./Routes/Protected";
 import LoginPage from "./Components/LoginPage";
-
 
 const router = createBrowserRouter([
   {
@@ -22,15 +20,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <div>This is my about</div>,
+        element: (
+          <div style={{ fontSize: "clamp(16px, 4vw, 24px)" }}>
+            This is my about
+          </div>
+        ),
       },
     ],
   },
   {
     path: "/login",
-    element: (
-     <LoginPage />
-    ), // Public login page
+    element: <LoginPage />, // Public login page
   },
 ]);
 
