@@ -86,3 +86,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     4-Redux actions
     5-Redux reducers
     6-redux-persist
+
+7-SWR (Stable while revalidate) instead of fetch, as fetcha nd useffect make 2 requests
+    Features of Swr
+    1- cache
+    2- revalidate
+    3- fallback
+    4- suspense
+    5- useSWR
+    6- useSWRConfig
+
+
+
+pending---
+useref
+usecallback
+usememo
+usereducer
+tanstack router
+Jest and cypress
+suspense
+Lazy Loading
+fallback
+how to render a spiner or laoder on full page when loading 
+error bpundries
+

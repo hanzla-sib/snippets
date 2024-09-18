@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProtectedRoute from "./Routes/Protected";
 import LoginPage from "./Components/LoginPage";
 import { ChangeCount } from "./Components/ChangeCount";
+import SwrApiFetch from "./Components/SwrApiFetch";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/counter",
-        element: <ChangeCount />,
+        // element: <ChangeCount />,
+        element: <SwrApiFetch />,
       },
     ],
   },
