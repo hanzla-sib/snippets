@@ -77,5 +77,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 1- useContext()
 2- outlet with react-router-dom
 3- protected routes with login 
-4-dynamic height with min-height and flex
+4- dynamic height with min-height and flex
 5-clamp(min,cur,upper) for dynamic text font size
+6- Redux-tool-kit
+    1-create store
+    2-Providor
+    3-Redux hooks
+    4-Redux actions
+    5-Redux reducers
+   
