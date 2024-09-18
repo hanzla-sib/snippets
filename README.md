@@ -85,4 +85,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     3-Redux hooks
     4-Redux actions
     5-Redux reducers
-   
+    6-redux-persist

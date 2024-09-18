@@ -3,6 +3,7 @@ import NavBar from "./Components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProtectedRoute from "./Routes/Protected";
 import LoginPage from "./Components/LoginPage";
+import { ChangeCount } from "./Components/ChangeCount";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             This is my about
           </div>
         ),
+      },
+      {
+        path: "/counter",
+        element: <ChangeCount />,
       },
     ],
   },
